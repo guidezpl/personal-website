@@ -17,7 +17,7 @@
   },
   "scripts": {
     "ghdeploy": "gh-pages -d build",
-    "deploy": "firebase deploy",
+    "deploy": "yarn build && firebase deploy",
     "start": "react-scripts start",
     "resume_to_image": "convert -verbose -density 200 src/assets/resume.pdf  src/images/resume.png",
     "build": "yarn resume_to_image && react-scripts build",
